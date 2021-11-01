@@ -1,7 +1,7 @@
 node_modules/
 dist/
-release/
+releases/
 npm-debug.log
 .idea/
 yarn.lock
-.DC_Store
+./.DC_Store
