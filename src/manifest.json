@@ -3,11 +3,20 @@
   "description": "__MSG_extDescription__",
   "manifest_version": 3,
   "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "content/index.js"
+      ]
+    }
+  ],
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_title": "__MSG_extName__",
     "default_popup": "popup/index.html",
@@ -18,11 +27,15 @@
       "128": "icons/128.png"
     }
   },
+  "options_page": "options/index.html",
+  "chrome_url_overrides": {
+    "newtab": "newtab/index.html"
+  },
+  "permissions": ["storage", "tabs", "scripting"],
   "icons": {
     "16": "icons/16.png",
     "32": "icons/32.png",
     "48": "icons/48.png",
     "128": "icons/128.png"
-  },
-  "options_page": "options/index.html"
+  }
 }
