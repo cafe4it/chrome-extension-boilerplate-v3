@@ -1,0 +1,7 @@
+node_modules/
+dist/
+release/
+npm-debug.log
+.idea/
+yarn.lock
+.DC_Store
