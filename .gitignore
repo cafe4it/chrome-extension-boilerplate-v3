@@ -4,4 +4,4 @@ releases/
 npm-debug.log
 .idea/
 yarn.lock
-./.DC_Store
+.DS_Store
